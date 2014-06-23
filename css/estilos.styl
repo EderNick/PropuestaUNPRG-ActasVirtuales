@@ -1,29 +1,137 @@
-azul = #22BCE0
+azul = rgb(24,105,171)
+celeste = #22BCE0
 gris_claro = #AAA
 gris_oscuro = #444
+verde = rgb(166,226,44)
+
+
+body
+	background rgba(gris_claro, 0.3)
+	font-size 15px
+	font-family Tahoma
+
+footer
+	background verde
+	color rgba(gris_oscuro,0.5)
+	font-size 0.7em
+	margin 0
+	overflow hidden
+	padding 0 1.5em
+
+	.ubicacion
+		float left
+
+		.nombre
+			display:block
+
+		.direccion_ful
+			display:block
+
+			.ciudad
+			.pais
+				&:before
+					content "- "
+
+	.contacto
+		float right
+
+		.telefono_email
+			display block
+
+			a
+				color rgba(gris_oscuro,0.5)
+				text-decoration none
+
+		.copyright
+			display block
+			text-align right
 
 header
-	background azul
+	background celeste
 	color gris_oscuro
+	overflow hidden
+	position relative
+
+	.logo
+		float left
+
+		img
+			width 140px
 
 	.titular
-		background blue
-		width 50%
+		margin-top 37px
+		margin-left 140px
+		width 420px
+
 		.iniciales
-			background red
 			border-right 1px solid gris_oscuro
 			float left
 			font-size 50px
+			margin 0
 			text-shadow 5px 5px 1px rgba(gris_oscuro, 0.5)
 			width 4em
 
 		.ful_nombre
-			background green
 			font-size 20px
-			width 70%
+			margin-left 10.3em
+			padding-top .3em
+			width 12em
 
 			.parte_uno
 			.parte_dos
 				margin 0
 				padding 0
-			
+	
+	.fecha
+		position absolute
+		bottom 5px
+		right 5px
+
+section
+	padding 1em 0 5em 0
+
+	.titulo_form
+		color azul
+		margin 0 auto
+		text-align center
+		padding 0.5em 0
+		width 300px
+
+	.formulario
+		background rgba(azul,0.2)
+		border 1px solid rgba(blue, 0.5)
+		border-radius 0.5em
+		margin 0 auto
+		padding 0.2em
+		width 300px
+
+		form
+			border 1px solid rgba(blue, 0.5)
+			border-radius 0.3em
+			overflow hidden			
+			padding 0 0 1em 0
+
+			.zona_campo
+				margin 1.5em
+
+				.label
+					color azul
+
+				
+				.textbox
+					background white
+					border 1px solid blue
+					float right
+					font-size 0.8em
+					height 18px
+					width 190px
+
+			.zona_accion
+				border-top 1px solid blue
+				.buton
+					color azul
+					background white
+					border 1px solid blue
+					float right
+					margin 0.5em 1.5em 0 0
+					

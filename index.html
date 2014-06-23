@@ -16,7 +16,7 @@
 				UNPRG
 			</h1>
 			<div class="ful_nombre">
-				<h4 class="parte_uno">Universidad Nacional</h4>
+				<h4 class="parte_uno">Universidad Nacional </h4>
 				<h4 class="parte_dos">Pedro Ruiz Gallo</h4>
 			</div>
 		</div>
@@ -26,34 +26,41 @@
 	</header>
 
 	<section>
-		<form name="frmLogIn" method="post" action="" class="formulario">
-			<div class="tiutlo_form">
+		<div class="titulo_form">
 				Sistema de Autenticación
-			</div>
-			<div class="campo">
-				<span class="label">Usuario</span>
-				<span><input type="text" name="txtUser" class="textbox"></span>
-			</div>
-			<div class="campo">
-				<span class="label">Clave</span>
-				<span><input type="text" name="txtPassword" class="textbox"></span>
-			</div>
-			<div class="campo">
-				<span><input type="submit" name="btnIngresar" value="Ingresar" class="textbox"></span>
-			</div>
-		</form>
+		</div>
+		<div class="formulario">
+			<form name="frmLogIn" method="post" action="">
+				<div class="zona_campo">
+					<span class="label">Usuario</span>
+					<span><input type="text" name="txtUser" class="textbox"></span>
+				</div>
+				<div class="zona_campo">
+					<span class="label">Clave</span>
+					<span><input type="password" name="txtPassword" class="textbox"></span>
+				</div>
+				<div class="zona_accion">
+					<span><input type="submit" name="btnIngresar" value="Ingresar" class="buton"></span>
+				</div>
+			</form>
+		</div>
+		
 	</section>
 
 	<footer>
 		<h4 class="ubicacion">
-			<span class="nombre">Universidad Nacional Pedro Ruiz Gallo</span>		
-			<span class="direccion">Av.Juan XIII 391 </span>
-			<span class="ciudad">Lambayeque</span> 
-			<span class="pais">Perú</span>
+			<span class="nombre">Universidad Nacional Pedro Ruiz Gallo</span>	
+			<div class="direccion_ful">
+				<span class="direccion">Av.Juan XIII 391 </span>
+				<span class="ciudad">Lambayeque</span> 
+				<span class="pais">Perú</span>
+			</div>	
 		</h4>
 		<h4 class="contacto">
-			<span class="telefono">Teléfono: (51)(74)-28-3281 / </span>
-			<a href="#" class="email">soporte_gestac@unprg.edu.pe</a>		
+			<span class="telefono_email">
+				Teléfono: (51)(74)-28-3281 / 
+				<a href="#">soporte_gestac@unprg.edu.pe</a>		
+			</span>
 			<span class="copyright">UNPRG-2014 &copy; Derechos Reservados</span>
 		</h4>
 	</footer>
