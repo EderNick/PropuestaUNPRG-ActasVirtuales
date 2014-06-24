@@ -19,7 +19,7 @@ footer
 	padding 0 1.5em
 
 	.ubicacion
-		float left
+		text-align center
 
 		.nombre
 			display:block
@@ -33,7 +33,7 @@ footer
 					content "- "
 
 	.contacto
-		float right
+		text-align center
 
 		.telefono_email
 			display block
@@ -44,10 +44,11 @@ footer
 
 		.copyright
 			display block
-			text-align right
+			text-align center
 
 header
 	background celeste
+	box-shadow 0px 5px 5px rgba(gris_oscuro,0.5)
 	color gris_oscuro
 	overflow hidden
 	position relative
@@ -56,39 +57,37 @@ header
 		float left
 
 		img
-			width 140px
+			width 70px
 
 	.titular
-		margin-top 37px
-		margin-left 140px
-		width 420px
+		margin 5px 0 30px 70px
+		width 55%
 
 		.iniciales
-			border-right 1px solid gris_oscuro
-			float left
-			font-size 50px
+			font-size 30px
 			margin 0
 			text-shadow 5px 5px 1px rgba(gris_oscuro, 0.5)
 			width 4em
 
 		.ful_nombre
-			font-size 20px
-			margin-left 10.3em
-			padding-top .3em
-			width 12em
+			border-top 1px solid gris_oscuro
+			font-size 15px
+			padding-top .1em
 
 			.parte_uno
 			.parte_dos
+				font-weight bold
 				margin 0
 				padding 0
 	
 	.fecha
-		position absolute
 		bottom 5px
+		font-size 12px
+		position absolute
 		right 5px
 
 section
-	padding 1em 0 5em 0
+	padding 1em 0 2em 0
 
 	.titulo_form
 		color azul
@@ -128,6 +127,7 @@ section
 
 			.zona_accion
 				border-top 1px solid blue
+
 				.buton
 					color azul
 					background white
@@ -135,3 +135,41 @@ section
 					float right
 					margin 0.5em 1.5em 0 0
 					
+
+@media screen and (min-width: 768px)
+	
+	header
+		.logo
+			img
+				width 140px
+
+		.titular
+			margin-top 37px
+			margin-left 140px
+			width 420px
+
+			.iniciales
+				border-right 1px solid gris_oscuro
+				float left
+				font-size 50px
+
+			.ful_nombre
+				border-top none
+				font-size 20px
+				margin-left 10.3em
+				padding-top .3em
+				width 12em
+	
+		.fecha
+			font-size 15px
+
+	footer
+		.ubicacion
+			float left
+
+		.contacto
+			float right
+
+			.copyright
+				display block
+				text-align right
